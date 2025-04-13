@@ -1,0 +1,15 @@
+spring:
+  application.name: demo-snowflake-id-hibernate-250413
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL:jdbc:postgresql://localhost:5433/demo}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+
+  flyway:
+    baseline-on-migrate: true
+
+nettee.persistence.snowflake:
+  datacenter-id: 1
+  worker-id: 1
